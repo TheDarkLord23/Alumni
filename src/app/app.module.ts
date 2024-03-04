@@ -4,11 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CareersComponent } from './careers/careers.component';
+import { OpportunitiesComponent } from './opportunities/opportunities.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    CareersComponent,
+    OpportunitiesComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
