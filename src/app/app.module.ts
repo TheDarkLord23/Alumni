@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CareersComponent } from './careers/careers.component';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { JobsComponent } from './jobs/jobs.component';
     NavbarComponent,
     CareersComponent,
     OpportunitiesComponent,
-    JobsComponent
+    JobsComponent,
+    AlumniDirectoryComponent
   ],
   imports: [
     BrowserModule,
