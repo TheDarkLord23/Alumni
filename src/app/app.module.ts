@@ -11,6 +11,7 @@ import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.co
 import { StoriesComponent } from './stories/stories.component';
 import { LandingComponent } from './landing/landing.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,12 @@ import { LandingComponent } from './landing/landing.component';
     AlumniDirectoryComponent,
     StoriesComponent,
     LandingComponent,
+    EventsPageComponent,
+    ContactComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
