@@ -10,6 +10,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { StoriesComponent } from './stories/stories.component';
 import { LandingComponent } from './landing/landing.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { LandingComponent } from './landing/landing.component';
     AlumniDirectoryComponent,
     StoriesComponent,
     LandingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
