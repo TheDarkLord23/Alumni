@@ -8,6 +8,7 @@ import { CareersComponent } from './careers/careers.component';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
+import { StoriesComponent } from './stories/stories.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.co
     CareersComponent,
     OpportunitiesComponent,
     JobsComponent,
-    AlumniDirectoryComponent
+    AlumniDirectoryComponent,
+    StoriesComponent
   ],
   imports: [
     BrowserModule,
