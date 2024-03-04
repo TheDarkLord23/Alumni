@@ -22,15 +22,12 @@ import { LandingComponent } from './landing/landing.component';
     AlumniDirectoryComponent,
     StoriesComponent,
     LandingComponent,
-    EventsPageComponent,
-    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
