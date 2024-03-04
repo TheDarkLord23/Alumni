@@ -10,6 +10,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.component';
 import { StoriesComponent } from './stories/stories.component';
 import { LandingComponent } from './landing/landing.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,10 @@ import { LandingComponent } from './landing/landing.component';
     JobsComponent,
     AlumniDirectoryComponent,
     StoriesComponent,
-    LandingComponent
+    LandingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
