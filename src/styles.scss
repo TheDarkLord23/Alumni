@@ -55,7 +55,9 @@ html {
   overflow-x: hidden;
 }
 
-body {
+*,
+*::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,4 +71,3 @@ body {
   --buttonbackground: #e8590c;
   --buttonbackgroundHover: #f76707;
 }
-
