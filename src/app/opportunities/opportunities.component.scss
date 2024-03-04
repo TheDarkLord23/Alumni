@@ -1,0 +1,49 @@
+@use "mediaquery" as mq;
+@include mq.for-phones;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 4rem auto;
+}
+
+.spacer {
+  height: 0.3rem;
+  width: 30%;
+  background-color: var(--buttonbackground);
+  border-radius: 2rem;
+  margin: 4rem auto;
+}
+
+.buttons {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+h5 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 0.5rem;
+  border-radius: 9px;
+  background-color: var(--buttonbackground);
+  border: none;
+  padding: 1.2rem 2.4rem;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--buttonbackgroundHover);
+  }
+}
