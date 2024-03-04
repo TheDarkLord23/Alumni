@@ -1,3 +1,4 @@
+import { EventsPageComponent } from './events-page/events-page.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     StoriesComponent,
     LandingComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    EventsPageComponent
   ],
   imports: [
     BrowserModule,
