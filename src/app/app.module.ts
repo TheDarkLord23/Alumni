@@ -11,6 +11,7 @@ import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.co
 import { StoriesComponent } from './stories/stories.component';
 import { LandingComponent } from './landing/landing.component';
 import { EventsPageComponent } from './events-page/events-page.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EventsPageComponent } from './events-page/events-page.component';
     AlumniDirectoryComponent,
     StoriesComponent,
     LandingComponent,
-    EventsPageComponent
+    EventsPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
