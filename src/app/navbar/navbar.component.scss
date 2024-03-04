@@ -1,0 +1,44 @@
+:host {
+    .header {
+        height: 9rem;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        position: sticky;
+        background: var(--background);
+    }
+
+    .nav-image-container {
+
+        height: 5rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav-links {
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        transition: all 0.3s ease-in;
+        a {
+            text-decoration: none;
+            color: var(--text);
+            &:hover {
+                color: var(--hoverLinks);
+
+            }
+        }
+
+    }
+
+
+}

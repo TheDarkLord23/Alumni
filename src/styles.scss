@@ -1,23 +1,23 @@
-/* 
+/*
 ---- 01 TYPOGRAPHY SYSTEM
 
       -Font sizes (px)
-      XS:  1.2rem, 1.4rem  
-      For text: 1.6rem / 1.8rem  
-      Heading 5: 2rem  
-      Heading 4: 2.4rem  
-      Heading 3: 3rem  
-      Heading 2: 3.6rem  
-      Heading 1: 4.4rem 
+      XS:  1.2rem, 1.4rem
+      For text: 1.6rem / 1.8rem
+      Heading 5: 2rem
+      Heading 4: 2.4rem
+      Heading 3: 3rem
+      Heading 2: 3.6rem
+      Heading 1: 4.4rem
       If you have a good reason to use bigger sizes: 5.2rem / 6.2rem / 7.4rem / 8.6rem / 9.8rem
 
-      -Font weights 
+      -Font weights
       Default: 400
       medium:500
       Semi-bold:600
       Bold700
 
-      -Line heights  
+      -Line heights
       Default: 1
       Small: 1.05
       Paragraph-default: 1.6
@@ -51,3 +51,28 @@
 ---- 07 WHITE SPACE
 
 */
+
+
+//call a varibale = selector: var(--varibale); e.g color: var(--text);//
+
+//!!! Don't forget to wrap your whole scss in :host{}//
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    --background: #fff4e6;
+    --text: #555;
+    --hoverLinks: #ffc078;
+}
