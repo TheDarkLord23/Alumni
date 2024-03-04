@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -11,6 +10,7 @@ import { AlumniDirectoryComponent } from './alumni-directory/alumni-directory.co
 import { StoriesComponent } from './stories/stories.component';
 import { LandingComponent } from './landing/landing.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -24,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
     StoriesComponent,
     LandingComponent,
     ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
