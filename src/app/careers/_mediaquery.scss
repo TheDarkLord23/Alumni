@@ -1,0 +1,7 @@
+@mixin for-phones{
+    @media screen and (max-width:480px) {
+        .wrapper{
+            background-color: black;
+        }
+    }
+}

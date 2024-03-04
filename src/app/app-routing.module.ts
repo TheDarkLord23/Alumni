@@ -6,6 +6,8 @@ import { StoriesComponent } from './stories/stories.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { CareersComponent } from './careers/careers.component';
 import { ContactComponent } from './contact/contact.component';
+import { OpportunitiesComponent } from './opportunities/opportunities.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 const routes: Routes = [
   { path: "", component: LandingComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: "events", component: EventsPageComponent },
   { path: "careers", component: CareersComponent },
   { path: "contact", component: ContactComponent },
+  { path: "opportunities", component: OpportunitiesComponent },
+  { path: "jobs", component: JobsComponent },
 
 ];
 
