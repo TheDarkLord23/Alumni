@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './jobs.component.scss'
 })
 export class JobsComponent {
+  windowScrolled = false;
 
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
+  }
 }

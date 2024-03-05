@@ -10,12 +10,24 @@ html {
   margin: 4rem auto;
 }
 
+.hero-text {
+  font-weight: 500;
+}
+
 .spacer {
   height: 0.3rem;
   width: 30%;
   background-color: var(--buttonbackground);
   border-radius: 2rem;
   margin: 4rem auto;
+}
+
+.spacer1 {
+  height: 0.3rem;
+  width: 30%;
+  background-color: var(--buttonbackground);
+  border-radius: 2rem;
+  margin: 2rem auto;
 }
 
 .buttons {
@@ -28,9 +40,62 @@ h5 {
   text-align: center;
 }
 
-.content {
+h2 {
+  text-align: center;
+}
+
+.alumni {
+  text-align: center;
+}
+
+.name {
+  text-align: left;
+  color: var(--buttonbackground);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course {
+  margin-top: 2rem;
+}
+
+#full {
+  background-color: #fff4e6;
+}
+
+#java {
+  background-color: #fff4e6;
+  margin-bottom: 0;
+}
+
+.course-title {
+  padding: 2rem;
+}
+
+.section {
+  margin: 2rem auto;
+  width: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+#section3 {
+  margin-bottom: 0rem;
+}
+
+.section div {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.8rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 button {
@@ -46,4 +111,25 @@ button {
     cursor: pointer;
     background-color: var(--buttonbackgroundHover);
   }
+}
+
+.to-top {
+  width: 7rem;
+  height: 7rem;
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+  position: fixed;
+  right: 0;
+  opacity: 0;
+  border-radius: 190px;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.up {
+  width: 20px;
 }

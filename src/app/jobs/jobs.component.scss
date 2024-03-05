@@ -1,0 +1,89 @@
+.wrapper {
+  width: 70%;
+  margin: 4rem auto;
+}
+
+.hero-text {
+  font-weight: 500;
+}
+
+.job {
+  height: 20rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.title-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.name {
+  margin-bottom: 0.5rem;
+}
+
+.spacer {
+  height: 0.3rem;
+  width: 30%;
+  background-color: var(--buttonbackground);
+  border-radius: 2rem;
+  margin: 4rem auto;
+}
+
+.spacer-long {
+  height: 0.3rem;
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  border-radius: 9px;
+  background-color: var(--buttonbackground);
+  border: none;
+  padding: 1.2rem 2.4rem;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--buttonbackgroundHover);
+  }
+}
+
+.to-top {
+  width: 7rem;
+  height: 7rem;
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+  position: fixed;
+  right: 0;
+  opacity: 0;
+  border-radius: 190px;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.up {
+  width: 20px;
+}

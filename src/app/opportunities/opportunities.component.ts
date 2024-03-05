@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './opportunities.component.html',
   styleUrl: './opportunities.component.scss'
 })
-export class OpportunitiesComponent {
+export class OpportunitiesComponent{
+  windowScrolled = false;
 
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
+  }
 }
