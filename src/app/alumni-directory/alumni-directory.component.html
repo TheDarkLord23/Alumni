@@ -1,1 +1,23 @@
-<p>alumni-directory works!</p>
+<div class="hero">
+  <h1>EXAMPLE HERO TEXT</h1>
+</div>
+<div class="alumnis">
+  <div class="person" *ngFor="let person of alumni">
+    <div class="person-text">
+      <p>{{ person.name }}</p>
+      <p>{{ person.title }}</p>
+      <button class="open" (click)="myDialog.show()">Details</button>
+    </div>
+    <!--<div
+      class="person-img"
+      style="background-image: url('{{ person.picture }}');"
+    ></div> -->
+    <img class="person-img" src="{{ person.picture }}" alt="" />
+    <dialog #myDialog>
+      <button class="close" (click)="myDialog.close()">x</button>
+      <div class="dialog-text">
+        <p>{{ person.dialog_text }}</p>
+      </div>
+    </dialog>
+  </div>
+</div>

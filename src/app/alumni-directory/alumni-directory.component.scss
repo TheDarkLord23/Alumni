@@ -1,0 +1,76 @@
+:host{
+    .alumnis{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .person{
+            margin: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+            height: 300px;
+            align-items: center;
+            border: solid 1px coral;
+            border-radius: 9px;
+            background-color: #FFF4E6;
+            position: relative;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .open{
+                border-radius: 9px;
+                background-color: var(--buttonbackground);
+                border: none;
+                padding: 1.2rem 2.4rem;
+                color: white;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: var(--buttonbackgroundHover);
+                }
+            }
+
+            .person-img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 40%;
+            }
+
+            .person-text{
+                text-align: center;
+                width: 40%;
+            }
+        }
+
+        dialog{
+            position: fixed;
+            z-index: 1;
+            top: 15%;
+            left: 15%;
+            width: 70%;
+            height: 70vh;
+            border-radius: 9px;
+            border: 1px solid coral ;
+            .close{
+                border-radius: 30%;
+                background-color: var(--buttonbackground);
+                border: none;
+                color: white;
+                margin: 10px;
+                padding: 10px;
+
+                &:hover {
+                    background-color: var(--buttonbackgroundHover);
+                }
+            }
+
+            .dialog-text{
+                padding: 20px;
+            }
+            &::backdrop {
+                background-color: black;
+            }
+        }
+        
+    }
+}
