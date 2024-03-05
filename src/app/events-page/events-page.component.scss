@@ -30,7 +30,7 @@
 
     .hero-event {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/img/MeetingHero.jpg);
-        height: 30vh;
+        height: 40vh;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -40,7 +40,7 @@
         justify-content: center;
         color: #fff;
         text-align: center;
-        padding: 2rem;
+        padding: 4rem;
 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Add box-shadow
     }
