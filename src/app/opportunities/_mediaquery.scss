@@ -1,7 +1,43 @@
 @mixin for-phones {
   @media screen and (max-width: 480px) {
     .wrapper {
-      background-color: black;
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    .hero-text {
+      margin-top: 1rem !important;
+    }
+    .buttons {
+      width: 90% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .section {
+      display: table !important;
+    }
+    .section div {
+      width: 100% !important;
+    }
+
+    .career {
+      display: table-header-group !important;
+    }
+
+    .graduates {
+      display: table-footer-group !important;
+    }
+    .alumni {
+      margin-top: 4rem;
     }
   }
 }
