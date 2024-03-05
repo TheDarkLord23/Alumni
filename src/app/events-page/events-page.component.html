@@ -1,24 +1,42 @@
-<section class="hero-event">
-    <!-- Your hero content goes here -->
-</section>
+<div class="wrapper">
 
-<main>
+    <section class="hero-event">
+        <!-- Your hero content goes here -->
+    </section>
+
+
     <div class="container">
+
+        <div class="sorting-buttons">
+            <button (click)="sortByDate()">Sort by Date</button>
+            <button (click)="sortByPrice()">Sort by Price</button>
+        </div>
 
         <div *ngFor="let event of events" class="holder">
             <div class="card">
                 <div class="card-top">
-                    <div class="card-top-img">
-                        <img src="{{event.image}}" alt="{{ event.title }}">
+                    <div style="display: flex; gap: 1rem;">
+                        <div class="card-top-img">
+                            <img src="{{event.image}}" alt="{{ event.title }}">
+                        </div>
+                        <div class="card-top-info">
+
+                            <h4>{{event.title}}</h4>
+                            <p>{{event.description}}</p>
+                            <p>{{event.date}}</p>
+                        </div>
                     </div>
-                    <div class="card-top-info">
-                        <!-- Add content for 'card-top-info' if needed -->
+                    <div style="padding:1rem">
+                        <p class="price">{{event.price | currency : "EUR"}}</p>
                     </div>
+
+                </div>
+                <div class="card-bottom">
+                    <span style="font-size: 1.6rem">{{event.location}} - {{event.date}}</span>
+
                 </div>
             </div>
-            <div class="card-bottom">
-                <!-- Add content for 'card-bottom' if needed -->
-            </div>
+
         </div>
     </div>
-</main>
+</div>
