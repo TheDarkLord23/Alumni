@@ -90,7 +90,7 @@
   text-decoration: none;
   color: #555;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 
@@ -142,6 +142,7 @@
 @media screen and (max-width: 59em) {
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
