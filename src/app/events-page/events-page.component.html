@@ -8,35 +8,32 @@
     <div class="container">
 
         <div class="sorting-buttons">
-            <button (click)="sortByDate()">Sort by Date</button>
-            <button (click)="sortByPrice()">Sort by Price</button>
+            <button (click)="sortByDate()"><i class="fa-solid fa-calendar"></i> Sort by Date</button>
+            <button (click)="sortByPrice()"><i class="fa-solid fa-money-bill-1"></i> Sort by Price</button>
         </div>
 
         <div *ngFor="let event of events" class="holder">
             <div class="card">
-                <div class="card-top">
-                    <div style="display: flex; gap: 1rem;">
-                        <div class="card-top-img">
-                            <img src="{{event.image}}" alt="{{ event.title }}">
-                        </div>
-                        <div class="card-top-info">
+                <div class="card-flex">
 
-                            <h4>{{event.title}}</h4>
-                            <p>{{event.description}}</p>
-                            <p>{{event.date}}</p>
-                        </div>
+                    <div class="card-top-img">
+                        <img src="{{event.image}}" alt="{{ event.title }}">
                     </div>
-                    <div style="padding:4rem">
-                        <p class="price">{{event.price | currency : "EUR"}}</p>
-                    </div>
+                    <div class="card-top-info">
 
+                        <h4>{{event.title}}</h4>
+                        <p style="margin-bottom: 1rem;">{{event.description}}</p>
+                        <p><i class="fa-solid fa-calendar"></i> Date: {{event.date}}</p>
+                        <p> <i class="fa-solid fa-money-bill-1"></i> Price: {{event.price | currency : "EUR"}}</p>
+                        <button class="price">Apply</button>
+                    </div>
                 </div>
                 <div class="card-bottom">
-                    <span style="font-size: 1.6rem">{{event.location}} - {{event.date}}</span>
+                    <span style="font-size: 1.6rem"><i class="fa-solid fa-location-dot"></i> Location:
+                        {{event.location}} - {{event.date}}</span>
 
                 </div>
             </div>
 
         </div>
     </div>
-</div>
