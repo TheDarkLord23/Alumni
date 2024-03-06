@@ -1,7 +1,24 @@
-@mixin for-phones{
-    @media screen and (max-width:480px) {
-        .wrapper{
-            background-color: black;
-        }
+@mixin for-phones {
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      width: 90% !important;
     }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+
+    .cards {
+      display: block !important;
+    }
+    .card-holder {
+      margin-bottom: 3rem;
+    }
+  }
 }

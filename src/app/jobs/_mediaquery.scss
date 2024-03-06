@@ -1,0 +1,158 @@
+@mixin for-phones {
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    .hero {
+      margin-bottom: 8rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .content {
+      padding: 1rem;
+    }
+
+    .job {
+      display: table !important;
+      width: 90% !important;
+      margin-bottom: 4rem !important;
+    }
+    img {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 7rem;
+      display: table-header-group !important;
+    }
+    .title-btn {
+      display: table-footer-group !important;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+@mixin for-tablets {
+  @media screen and (min-width: 480px) and (max-width: 786px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    .hero {
+      margin-bottom: 8rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .content {
+      padding: 1rem;
+    }
+
+    .job {
+      display: table !important;
+      width: 90% !important;
+      margin-bottom: 4rem !important;
+    }
+    img {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 7rem;
+      display: table-header-group !important;
+    }
+    .title-btn {
+      display: table-footer-group !important;
+    }
+    button {
+      width: 75vw;
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+@mixin for-laptop {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    .hero {
+      margin-bottom: 8rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+
+    .job {
+      width: 90% !important;
+      margin-bottom: 4rem !important;
+      height: 30vh !important;
+    }
+    button {
+      width: 10rem;
+      padding: 1rem 1.6rem !important;
+    }
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (min-width: 1024px) and (max-width: 1500px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    .hero {
+      margin-bottom: 8rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    button {
+      width: 12rem;
+    }
+
+    .job {
+      width: 90% !important;
+      margin-bottom: 4rem !important;
+      height: 20vh !important;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 @use "mediaquery" as mq;
 @include mq.for-phones;
-
+* {
+  padding: 0;
+  margin: 0;
+}
 .wrapper {
   width: 70%;
   margin: 4rem auto;

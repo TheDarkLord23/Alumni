@@ -1,23 +1,43 @@
+@use "mediaquery" as mq;
+@include mq.for-phones;
+@include mq.for-tablets;
+@include mq.for-laptop;
+@include mq.for-desktop;
+
 .wrapper {
-  width: 70%;
+  width: 75%;
   margin: 4rem auto;
 }
 
 .hero-text {
   font-weight: 500;
 }
+.hero-text1 {
+  font-weight: 500;
+}
 
 .job {
-  height: 20rem;
-  margin: 4rem auto;
+  height: 17rem;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
 
+h1 {
+  margin-bottom: 4rem;
+}
+
+.content {
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .title-btn {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 img {
@@ -46,6 +66,7 @@ img {
   background-color: rgb(199, 199, 199);
   border-radius: 2rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 p {
