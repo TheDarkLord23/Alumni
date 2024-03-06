@@ -16,9 +16,82 @@
 
     .cards {
       display: block !important;
+      margin: 0px auto !important;
     }
     .card-holder {
-      margin-bottom: 3rem;
+      margin: 0px auto;
+      margin-bottom: 3rem !important;
+    }
+  }
+}
+
+@mixin for-tablets {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+
+    .cards {
+      display: block !important;
+      margin: 0 auto !important;
+    }
+    .card-holder {
+      margin: 0px auto;
+      margin-bottom: 3rem !important;
+    }
+  }
+}
+
+@mixin for-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    .card-holder {
+      width: 40% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1500px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    .card-holder {
+      width: 35% !important;
+      height: 100% !important;
     }
   }
 }

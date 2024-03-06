@@ -1,5 +1,9 @@
 @use "mediaquery" as mq;
 @include mq.for-phones;
+@include mq.for-tablets;
+@include mq.for-laptop;
+@include mq.for-desktop;
+@include mq.for-bigger;
 
 html {
   scroll-behavior: smooth;

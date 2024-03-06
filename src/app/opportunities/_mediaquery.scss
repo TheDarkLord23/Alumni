@@ -41,3 +41,152 @@
     }
   }
 }
+
+@mixin for-tablets {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    .hero-text {
+      margin-top: 1rem !important;
+    }
+    .buttons {
+      width: 80% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .section {
+      display: table !important;
+    }
+    .section div {
+      width: 100% !important;
+    }
+
+    .career {
+      display: table-header-group !important;
+    }
+
+    .graduates {
+      display: table-footer-group !important;
+    }
+    .alumni {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@mixin for-laptop {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .spacer {
+      width: 50% !important;
+    }
+    .hero-text {
+      margin-top: 1rem !important;
+    }
+    .buttons {
+      width: 60% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .section {
+      display: table !important;
+    }
+    .section div {
+      width: 100% !important;
+    }
+
+    .career {
+      display: table-header-group !important;
+    }
+
+    .graduates {
+      display: table-footer-group !important;
+    }
+    .alumni {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (min-width: 1025px) and (max-width: 1500px) {
+    .wrapper {
+      width: 90% !important;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    img {
+      width: 70% !important;
+    }
+
+    .career {
+      text-align: center !important;
+    }
+
+    .spacer {
+      width: 50% !important;
+      margin-top: 0rem !important;
+    }
+    .hero-text {
+      margin-top: 1rem !important;
+    }
+    .buttons {
+      width: 50% !important;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    .section {
+      display: table !important;
+    }
+    .section div {
+      width: 100% !important;
+    }
+
+    .career {
+      display: table-header-group !important;
+    }
+
+    .graduates {
+      display: table-footer-group !important;
+    }
+    .alumni {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@mixin for-bigger {
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    .buttons {
+      width: 40% !important;
+    }
+  }
+}

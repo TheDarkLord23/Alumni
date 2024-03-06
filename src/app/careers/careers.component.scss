@@ -1,5 +1,9 @@
 @use "mediaquery" as mq;
 @include mq.for-phones;
+@include mq.for-tablets;
+@include mq.for-laptop;
+@include mq.for-desktop;
+
 * {
   padding: 0;
   margin: 0;
@@ -54,6 +58,7 @@ img {
 
 button {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 9px;
   background-color: var(--buttonbackground);
   border: none;
