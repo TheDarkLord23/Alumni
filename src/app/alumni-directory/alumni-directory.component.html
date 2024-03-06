@@ -1,12 +1,25 @@
+<button
+  class="to-top"
+  onClick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});"
+  [ngClass]="{ 'show-scrollTop': windowScrolled }"
+>
+  <img class="up" src="assets/img/up-arrow.png" alt="" />
+</button>
+
 <div class="hero">
-  <h1>EXAMPLE HERO TEXT</h1>
+  <h2>
+    From design virtuosos to algorithmic maestros, their journeys reflect the
+    diversity and dynamism of the tech world. Join us as we celebrate their
+    achievements and the indelible mark they leave on the ever-evolving
+    landscape of technology.
+  </h2>
 </div>
 <div class="alumnis">
   <div class="person" *ngFor="let person of alumni">
     <div class="person-text">
-      <p>{{ person.name }}</p>
-      <p>{{ person.title }}</p>
-      <button class="open" (click)="myDialog.show()">Details</button>
+      <h3>{{ person.name }}</h3>
+      <h5>{{ person.title }}</h5>
+      <button class="open" (click)="myDialog.showModal()">Details</button>
     </div>
     <!--<div
       class="person-img"
@@ -14,9 +27,34 @@
     ></div> -->
     <img class="person-img" src="{{ person.picture }}" alt="" />
     <dialog #myDialog>
-      <button class="close" (click)="myDialog.close()">x</button>
-      <div class="dialog-text">
-        <p>{{ person.dialog_text }}</p>
+      <button class="close" (click)="myDialog.close()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="dialog-main">
+        <div class="dialog-text">
+          <h5>{{ person.dialog_text }}</h5>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr></tr>
+              <th>Test</th>
+              <th>Test</th>
+              <th>Test</th>
+              <th>Test</th>
+              <th>Test</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </dialog>
   </div>
