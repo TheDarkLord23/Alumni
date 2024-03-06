@@ -10,7 +10,7 @@
         Unveiling the Success Stories of CodeFactory Graduates! Learn about the
         experiences of past students with us.
       </p>
-      <a href="#" class="btn">Learn more &darr;</a>
+      <a href="#scroll" class="btn">Learn more &darr;</a>
       <div class="alumni-banner">
         <div class="alumni-imgs">
           <img src="/assets/img/customer-1.jpg" alt="customer-photo" />
@@ -30,17 +30,32 @@
     </div>
   </div>
 </section>
-<section class="about-landing">
+<section class="about-landing" id="scroll">
   <div class="about-text">
     <h5>About</h5>
     <h1>Who Are We?</h1>
   </div>
   <div class="cookieCard">
-    <p class="cookieHeading">Cookies.</p>
-    <p class="cookieDescription">
-      By using this website you automatically accept that we use cookies.
-    </p>
-    <button class="acceptButton">Apply to be a student</button>
+    <div class="cookieText">
+      <p class="cookieHeading">
+        Codefactory Vienna: <br /><span>Innovation Hub</span>
+      </p>
+      <p class="cookieDescription">
+        Welcome to Codefactory Vienna, your destination for innovative coding
+        solutions in the vibrant heart of the city. Our founders, driven by a
+        shared passion for excellence, established our company with the vision
+        of seamlessly blending cutting-edge technology with creativity.
+        <br /><br />
+        Inspired by Vienna's cultural richness, we have assembled a team of
+        skilled professionals dedicated to pushing the boundaries of
+        programming. At Codefactory Vienna, our focus is on crafting exceptional
+        software experiences that elevate businesses to new heights.
+      </p>
+      <button class="acceptButton">Apply to be a student</button>
+    </div>
+    <div class="cookieImg">
+      <img src="/assets/img/programmingteam.jpg" alt="" />
+    </div>
   </div>
 </section>
 <section class="testimonials-landing">
@@ -87,17 +102,43 @@
       </div>
     </div>
   </div>
+  <button class="testimonial-btn" routerLink="/stories">Read more</button>
 </section>
 <section class="events-landing">
   <div class="testimonials-text">
     <h5>Events</h5>
-
     <h1>Our Upcoming Events</h1>
   </div>
+  <div *ngFor="let event of events" class="holder">
+    <div class="card">
+      <!-- <div class="card-content"> -->
+      <div class="card-flex">
+        <div class="card-top-img">
+          <img src="{{ event.image }}" alt="{{ event.title }}" />
+        </div>
+        <div class="card-top-info">
+          <h4>{{ event.title }}</h4>
+          <p class="description">{{ event.description }}</p>
+          <p><i class="fa-solid fa-calendar"></i> Date: {{ event.date }}</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Location:
+            {{ event.location }} - {{ event.date }}
+          </p>
+          <p>
+            <i class="fa-solid fa-money-bill-1"></i> Price: €
+            {{ event.price }}
+          </p>
+          <button class="price">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="events-btn" routerLink="/events">See more events</button>
+  <!-- </div> -->
 </section>
 <section class="careers-landing">
   <div class="testimonials-text">
-    <h5>Events</h5>
-    <h1>Our Upcoming Events</h1>
+    <h5>Careers</h5>
+    <h1>Join Our Team</h1>
   </div>
 </section>
