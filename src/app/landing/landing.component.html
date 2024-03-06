@@ -1,3 +1,10 @@
+<button
+  class="to-top"
+  onClick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});"
+  [ngClass]="{ 'show-scrollTop': windowScrolled }"
+>
+  <img class="up" src="assets/img/up-arrow.png" alt="" />
+</button>
 <section class="hero-landing">
   <div class="hero-homepage">
     <div class="hero-text-box">
@@ -10,7 +17,11 @@
         Unveiling the Success Stories of CodeFactory Graduates! Learn about the
         experiences of past students with us.
       </p>
-      <a href="#scroll" class="btn">Learn more &darr;</a>
+      <a
+        onClick="document.getElementById('scroll').scrollIntoView({behavior: 'smooth'});"
+        class="btn"
+        >Learn more &darr;</a
+      >
       <div class="alumni-banner">
         <div class="alumni-imgs">
           <img src="/assets/img/customer-1.jpg" alt="customer-photo" />
@@ -140,5 +151,29 @@
   <div class="testimonials-text">
     <h5>Careers</h5>
     <h1>Join Our Team</h1>
+  </div>
+  <div class="cards">
+    <div class="card-holder">
+      <img src="assets/img/opportunity.jpg" alt="Image description" />
+      <div class="card-content">
+        <h4>Career opportunities</h4>
+        <p>
+          Explore the variety of career paths open to you as a CodeFactory
+          graduate.
+        </p>
+        <a routerLink="/opportunities"><button>Opportunities</button></a>
+      </div>
+    </div>
+    <div class="card-holder">
+      <img src="assets/img/job.jpg" alt="Image description" />
+      <div class="card-content">
+        <h4>Job Offers</h4>
+        <p>
+          Explore the variety of Jobs offered by the most famous companies in
+          Vienna and Europe.
+        </p>
+        <a routerLink="/jobs"><button>Job Offers</button></a>
+      </div>
+    </div>
   </div>
 </section>

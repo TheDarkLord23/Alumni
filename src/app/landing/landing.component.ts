@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss',
+  styleUrls: ['./landing.component.scss', './media.component.scss'],
 })
 export class LandingComponent {
+  windowScrolled = false;
   events: {
     title: string;
     description: string;
@@ -33,4 +34,10 @@ export class LandingComponent {
       image: '../../assets/img/camp.jpg',
     },
   ];
+
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
+  }
 }
