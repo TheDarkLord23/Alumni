@@ -22,17 +22,15 @@
                     <div class="card-top-info">
 
                         <h4>{{event.title}}</h4>
-                        <p style="margin-bottom: 1rem;">{{event.description}}</p>
+                        <p>{{event.description}}</p>
                         <p><i class="fa-solid fa-calendar"></i> Date: {{event.date}}</p>
                         <p> <i class="fa-solid fa-money-bill-1"></i> Price: {{event.price | currency : "EUR"}}</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Location:
+                            {{event.location}} - {{event.date}}</p>
                         <button class="price">Apply</button>
                     </div>
                 </div>
-                <div class="card-bottom">
-                    <span style="font-size: 1.6rem"><i class="fa-solid fa-location-dot"></i> Location:
-                        {{event.location}} - {{event.date}}</span>
 
-                </div>
             </div>
 
         </div>
