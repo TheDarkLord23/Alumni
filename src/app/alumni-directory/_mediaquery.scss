@@ -1,0 +1,126 @@
+@mixin medium-screen{
+    @media screen and (min-width: 640px) and (max-width: 1531px) {
+        .hero{
+            height: 40vh !important;
+        }
+        .person{
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            height: 300px;
+            align-items: center;
+            border: solid 1px coral;
+            border-radius: 9px;
+            background-color: #FFF4E6;
+            position: relative;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            .person-img{
+                right: -15%;
+            }
+        }
+
+        .dialog-main{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            height: auto;
+            justify-content: center;
+            align-items: normal;
+
+            .dialog-text{
+                width: 100% !important;
+            }
+
+            .table{
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@mixin small-screen{
+    @media screen and (min-width: 470px) and (max-width: 640px) {
+        .person{
+            margin: 60px;
+            display: flex;
+            width: 100%;
+            height: 300px;
+            align-items: center;
+            border: solid 1px coral;
+            border-radius: 9px;
+            background-color: #FFF4E6;
+            position: relative;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .person-img{
+            height: 80% !important;
+        }
+
+        dialog{
+            width: 100% !important;
+            left: 2%;
+            height: 80vh;
+
+            .dialog-main{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                height: auto;
+                justify-content: space-evenly;
+                align-items: normal;
+    
+                .dialog-text{
+                    width: 100% !important;
+                }
+    
+                .table{
+                    width: 100% !important;
+
+                }
+            }
+        }
+
+    }
+}
+
+@mixin for-iphone5{
+    @media screen and (max-width: 470px) {
+        .person{
+            width: 100%;
+
+            .person-img{
+                display: none;
+            }
+    
+            .person-text{
+                width: 100% !important;
+            }
+        }
+
+        dialog{
+            width: 100% !important;
+            left: 2%;
+            height: auto;
+
+            .dialog-main{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                height: auto;
+                justify-content: space-evenly;
+                align-items: normal;
+    
+                .dialog-text{
+                    width: 100% !important;
+                }
+    
+                .table{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
