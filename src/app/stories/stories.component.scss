@@ -1,0 +1,143 @@
+.container {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.gridcontainers {
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25rem;
+  place-items: center;
+  margin: 7rem 0;
+  margin-bottom: 20rem;
+}
+
+.flip-card {
+  width: 40%;
+  height: 40rem; /* Adjust height as needed */
+  perspective: 100rem; /* This enables 3D space for the flip effect */
+
+  .card-img {
+    border: 0.2rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 40rem; /* Adjust height as needed */
+    perspective: 100rem;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 0.2rem solid white;
+  border-radius: 0.8rem;
+}
+
+.flip-card-front {
+  background-color: #fff4e6;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #fff4e6;
+  color: white;
+  transform: rotateY(180deg);
+
+  .back-img {
+    width: 100%;
+    height: 2rem;
+  }
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.flip-card p {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: black;
+  background-color: #fff4e6;
+  padding: 1rem;
+}
+
+// Media
+
+@media screen and (min-width: 1124px) and (max-width: 2560px) {
+  .flip-card {
+    width: 35%;
+    gap: 25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1124px) {
+  .flip-card {
+    width: 70%;
+    gap: 25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .flip-card {
+    width: 70%;
+    gap: 25rem;
+  }
+  .title {
+    font-size: 1.4rem !important;
+  }
+  .flip-card p {
+    font-size: 1.2rem;
+  }
+}
+
+// @media screen and (min-width: 480px) and (max-width: 800px) {
+//   .gridcontainers {
+//     grid-template-columns: repeat(2, 1fr);
+
+//     .flip-card {
+//       margin: 10rem 0px;
+//       width: 100%;
+//       height: 40rem;
+//     }
+//   }
+// }
+// @media screen and (max-width: 480px) {
+//   .gridcontainers {
+//     grid-template-columns: 1fr;
+//   }
+// }
+// @media screen and (min-width: 800px) {
+//   .flip-card-back {
+//     width: 100%;
+//     height: 40rem;
+//   }
+// }
