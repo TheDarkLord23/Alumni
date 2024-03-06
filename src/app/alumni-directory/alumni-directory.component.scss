@@ -89,14 +89,12 @@
                             text-align: center;
                         }
                         th{
-                            border-top-left-radius: 9px;
-                            border-top-right-radius: 9px;
+                            border-radius: 9px;
                             background-color: #E8590C;
                             color: white;
                         }
                         td{
-                            border-bottom-left-radius: 9px;
-                            border-bottom-right-radius: 9px;
+                            border-radius: 9px;
                             background-color: rgba(255, 244, 230, 0.952);
                         }
                     }

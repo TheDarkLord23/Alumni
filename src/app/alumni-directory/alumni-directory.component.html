@@ -7,24 +7,22 @@
 </button>
 
 <div class="hero">
-  <h2>
+  <h3>
     <span class="colored">From design virtuosos to algorithmic maestros</span>,
-    their journeys reflect the diversity and dynamism of the tech world. Join us
-    as we celebrate their achievements and the indelible mark they leave on the
-    ever-evolving landscape of technology.
-  </h2>
+    their journeys reflect the diversity and dynamism of the tech world.
+  </h3>
+  <h4>
+    Join us as we celebrate their achievements and the indelible mark they leave
+    on the ever-evolving landscape of technology.
+  </h4>
 </div>
 <div class="alumnis">
   <div class="person" *ngFor="let person of alumni">
     <div class="person-text">
       <h3>{{ person.name }}</h3>
-      <h5>{{ person.title }}</h5>
+      <p>{{ person.title }}</p>
       <button class="open" (click)="myDialog.showModal()">Details</button>
     </div>
-    <!--<div
-      class="person-img"
-      style="background-image: url('{{ person.picture }}');"
-    ></div> -->
     <img class="person-img" src="{{ person.picture }}" alt="" />
     <dialog #myDialog>
       <button class="close" (click)="myDialog.close()">
