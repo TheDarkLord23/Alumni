@@ -1,5 +1,5 @@
 @mixin medium-screen{
-    @media screen and (min-width: 640px) and (max-width: 1531px) {
+    @media screen and (min-width: 737px) and (max-width: 1531px) {
         .hero{
             height: 40vh !important;
         }
@@ -7,7 +7,7 @@
             margin: 50px;
             display: flex;
             justify-content: space-between;
-            width: 70%;
+            width: 55%;
             height: 300px;
             align-items: center;
             border: solid 1px coral;
@@ -17,7 +17,7 @@
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
             .person-img{
-                right: -15%;
+                right: -20%;
             }
         }
 
@@ -41,7 +41,7 @@
 }
 
 @mixin small-screen{
-    @media screen and (min-width: 470px) and (max-width: 640px) {
+    @media screen and (min-width: 470px) and (max-width: 737px) {
         .person{
             margin: 60px;
             display: flex;

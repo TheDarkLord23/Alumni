@@ -9,6 +9,10 @@
         .colored{
             color: #993600;
         }
+
+        h4{
+            font-weight: 400;
+        }
     }
     .alumnis{
         display: flex;
@@ -26,6 +30,7 @@
             border-radius: 9px;
             background-color: #FFF4E6;
             position: relative;
+            z-index: -1;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             .open{
                 border-radius: 9px;
