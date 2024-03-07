@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class EventsPageComponent {
 
+  windowScrolled = false;
+
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
+  }
+
   events: { title: string, description: string, date: string, price: number, location: string, image: string }[] = [
     {
       title: "Tech Talk: Web Development Trends",
