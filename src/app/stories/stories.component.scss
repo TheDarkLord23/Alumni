@@ -110,39 +110,39 @@
   .up {
     width: 20px;
   }
-}
 
-// Media
+  // Media
 
-@media screen and (min-width: 1124px) and (max-width: 2560px) {
-  .flip-card {
-    width: 35%;
-    gap: 25rem;
-  }
+  @media screen and (min-width: 1124px) and (max-width: 2560px) {
+    .flip-card {
+      width: 35%;
+      gap: 25rem;
+    }
 
-  .title {
-    font-size: 2rem;
+    .title {
+      font-size: 2rem;
+    }
   }
-}
-@media screen and (min-width: 480px) and (max-width: 1124px) {
-  .flip-card {
-    width: 70%;
-    gap: 25rem;
-  }
+  @media screen and (min-width: 480px) and (max-width: 1124px) {
+    .flip-card {
+      width: 70%;
+      gap: 25rem;
+    }
 
-  .title {
-    font-size: 2rem;
+    .title {
+      font-size: 2rem;
+    }
   }
-}
-@media screen and (max-width: 480px) {
-  .flip-card {
-    width: 70%;
-    gap: 25rem;
-  }
-  .title {
-    font-size: 1.4rem !important;
-  }
-  .flip-card p {
-    font-size: 1.2rem;
+  @media screen and (max-width: 480px) {
+    .flip-card {
+      width: 70%;
+      gap: 25rem;
+    }
+    .title {
+      font-size: 1.4rem !important;
+    }
+    .flip-card p {
+      font-size: 1.2rem;
+    }
   }
 }
