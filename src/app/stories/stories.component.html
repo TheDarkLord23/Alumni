@@ -1,3 +1,10 @@
+<button
+  class="to-top"
+  onClick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});"
+  [ngClass]="{ 'show-scrollTop': windowScrolled }"
+>
+  <img class="up" src="assets/img/up-arrow.png" alt="" />
+</button>
 <section class="container">
   <div class="gridcontainers">
     <div class="flip-card">
