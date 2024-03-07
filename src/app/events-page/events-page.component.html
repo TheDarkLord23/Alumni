@@ -7,39 +7,49 @@
 </button>
 
 <div class="wrapper">
-
-    <section class="hero-event">
-        <h1>Events</h1>
-    </section>
-
-
-    <div class="container">
-
-        <div class="sorting-buttons">
-            <button (click)="sortByDate()"><i class="fa-solid fa-calendar"></i> Sort by Date</button>
-            <button (click)="sortByPrice()"><i class="fa-solid fa-money-bill-1"></i> Sort by Price</button>
-        </div>
-
-        <div *ngFor="let event of events" class="holder">
-            <div class="card">
-                <div class="card-flex">
-
-                    <div class="card-top-img">
-                        <img src="{{event.image}}" alt="{{ event.title }}">
-                    </div>
-                    <div class="card-top-info">
-
-                        <h4>{{event.title}}</h4>
-                        <p>{{event.description}}</p>
-                        <p><i class="fa-solid fa-calendar"></i> Date: {{event.date}}</p>
-                        <p> <i class="fa-solid fa-money-bill-1"></i> Price: {{event.price | currency : "EUR"}}</p>
-                        <p><i class="fa-solid fa-location-dot"></i> Location:
-                            {{event.location}} - {{event.date}}</p>
-                        <button class="price">Apply</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
+  <section class="hero-event">
+    <div class="hero-text">
+      <h1>Events</h1>
+      <p>
+        Discover a world of excitement and connection at our Events Page, where
+        each gathering promises inspiration and collaboration in the realm of
+        technology and innovation.
+      </p>
     </div>
+  </section>
+
+  <div class="container">
+    <div class="sorting-buttons">
+      <button (click)="sortByDate()">
+        <i class="fa-solid fa-calendar"></i> Sort by Date
+      </button>
+      <button (click)="sortByPrice()">
+        <i class="fa-solid fa-money-bill-1"></i> Sort by Price
+      </button>
+    </div>
+
+    <div *ngFor="let event of events" class="holder">
+      <div class="card">
+        <div class="card-flex">
+          <div class="card-top-img">
+            <img src="{{ event.image }}" alt="{{ event.title }}" />
+          </div>
+          <div class="card-top-info">
+            <h4>{{ event.title }}</h4>
+            <p>{{ event.description }}</p>
+            <p><i class="fa-solid fa-calendar"></i> Date: {{ event.date }}</p>
+            <p>
+              <i class="fa-solid fa-money-bill-1"></i> Price:
+              {{ event.price | currency : "EUR" }}
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Location:
+              {{ event.location }} - {{ event.date }}
+            </p>
+            <button class="price">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
