@@ -62,7 +62,12 @@
         programming. At Codefactory Vienna, our focus is on crafting exceptional
         software experiences that elevate businesses to new heights.
       </p>
-      <button class="acceptButton">Apply to be a student</button>
+      <a
+        href="https://codefactory.wien/en/home-en/"
+        target="_blank"
+        class="acceptButton"
+        >Apply to be a student</a
+      >
     </div>
     <div class="cookieImg">
       <img src="/assets/img/programmingteam.jpg" alt="" />
@@ -75,40 +80,15 @@
     <h1>Hear from Our Alumni</h1>
   </div>
   <div class="flip-cards">
-    <div class="flip-card">
+    <div class="flip-card" *ngFor="let val of people">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="/assets/img/customer-1.jpg" alt="" />
-          <p class="title">Janine</p>
-          <p>Head of Frontend Development</p>
+          <img src="{{ val.img }}" alt="" />
+          <p class="title">{{ val.name }}</p>
+          <p>{{ val.title }}</p>
         </div>
         <div class="flip-card-back">
-          <p class="title">BACK</p>
-          <p>Leave Me</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <p class="title">FLIP CARD</p>
-          <p>Hover Me</p>
-        </div>
-        <div class="flip-card-back">
-          <p class="title">BACK</p>
-          <p>Leave Me</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <p class="title">FLIP CARD</p>
-          <p>Hover Me</p>
-        </div>
-        <div class="flip-card-back">
-          <p class="title">BACK</p>
-          <p>Leave Me</p>
+          <p class="title">"{{ val.quote }}"</p>
         </div>
       </div>
     </div>
@@ -136,8 +116,8 @@
             {{ event.location }} - {{ event.date }}
           </p>
           <p>
-            <i class="fa-solid fa-money-bill-1"></i> Price: €
-            {{ event.price }}
+            <i class="fa-solid fa-money-bill-1"></i> Price:
+            {{ event.price | currency : "EUR" }}
           </p>
           <button class="price">Apply</button>
         </div>

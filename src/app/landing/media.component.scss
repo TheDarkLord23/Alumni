@@ -84,3 +84,44 @@
     justify-content: center;
   }
 }
+
+// Below 575px /////
+
+@media (max-width: 575px) {
+  .about-landing {
+    padding: 6rem 4rem;
+  }
+
+  .cookieCard {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .cookieText {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cookieImg {
+    width: 100%;
+  }
+
+  .card-holder {
+    width: 100%;
+  }
+
+  .testimonials-landing {
+    padding: 6rem 4rem;
+  }
+
+  .events-landing {
+    padding: 6rem 4rem;
+  }
+
+  .careers-landing {
+    padding: 6rem 4rem;
+  }
+}

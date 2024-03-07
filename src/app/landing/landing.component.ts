@@ -40,4 +40,33 @@ export class LandingComponent {
       this.windowScrolled = window.pageYOffset !== 0;
     });
   }
+
+  people: {
+    img: string;
+    name: string;
+    title: string;
+    quote: string;
+  }[] = [
+    {
+      img: '/assets/img/aleximg.jpg',
+      name: 'Aleksandar Antonov',
+      title: 'CTO at Adobe',
+      quote:
+        "From Vienna's Code Factory to Adobe's helm, my journey is an ode to dedication.",
+    },
+    {
+      img: '/assets/img/beneimg.jpg',
+      name: 'Benedikt Wychert',
+      title: 'Chief Scientist Open AI',
+      quote:
+        'CodeFactory, a nurturing ground for tech talents in Vienna, cultivates the seeds of innovation, turning apprentices into industry leaders.',
+    },
+    {
+      img: '/assets/img/lizaimg.jpg',
+      name: 'Liza Kata Kovacs',
+      title: 'Global Design Director at IDEO',
+      quote:
+        "CodeFactory is not just an institution; it's the crucible where my curiosity ignited and my coding dreams took flight.",
+    },
+  ];
 }
